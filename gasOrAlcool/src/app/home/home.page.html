@@ -19,12 +19,12 @@
 
         <ion-item>
           <ion-label position="floating">Preço Álcool, ex: 1,90</ion-label>
-          <ion-input type="number" [(ngModel)]="precoAlcool"></ion-input>
+          <ion-input clearInput type="number" [(ngModel)]="precoAlcool"></ion-input>
         </ion-item>
 
         <ion-item>
           <ion-label position="floating">Preço Gasolina, ex: 2,90</ion-label>
-          <ion-input type="number" [(ngModel)]="precoGasolina"></ion-input>
+          <ion-input clearInput type="number" [(ngModel)]="precoGasolina"></ion-input>
         </ion-item>
 
         <ion-button expand="full" shape="round" (click)="calcular()">

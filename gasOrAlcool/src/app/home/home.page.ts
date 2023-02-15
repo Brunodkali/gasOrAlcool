@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  public resultado: String = "Resultado";
+  public resultado: String = "O resultado aparecerá aqui";
   public precoAlcool: String = "";
   public precoGasolina: String = "";
 
@@ -16,9 +16,9 @@ export class HomePage {
     if (this.precoAlcool && this.precoGasolina) {
       let pAlcool = Number(this.precoAlcool);
       let pGasolina = Number(this.precoGasolina);
-      let res = pAlcool / pGasolina;
+      let res = pGasolina * 0.7;
 
-      if (res >= 0.7) {
+      if (res <= pAlcool) {
         this.resultado = "Melhor utilizar Gasolina"
       }else {
         this.resultado = "Melhor utilizar Álcool"
